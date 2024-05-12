@@ -1,0 +1,14 @@
+# If with USB to RS232 adapter type "lsusb" and u'll get the idVendor and idProduct 
+# If not just do a symlink with "ln /dev/device_port /dev/Mine_sery"
+
+
+
+# Match the desired device properties (modify as needed)
+SUBSYSTEM=="tty", ATTRS{idVendor}=="VID_XXXX", ATTRS{idProduct}=="PID_YYYY"
+
+# Create a symbolic link with a chosen name
+SYMLINK+="Mine_sery"
+
+# (Optional) Set permissions for the symbolic link
+MODE="0666"
+
