@@ -20,3 +20,9 @@ A basic serial layer for user interaction, facilite the first steps using serial
 First time getting into using basic syscalls and dealing with serial over linux will be so overwhelming, i created Meine_sery cause of that, it helps and make the first steps more easier for newbies.
 
 * Meine_sery uses "open()" , "close()", "read()", and "write()" also it uses "poll()" as system calls for handling serial manipulation.
+
+### Example:
+
+There is a simple example with Meine_sery in "main.c" .
+
+Also follow the "udev_rules.txt" instructions to bind the serial port dynamically to your application.
